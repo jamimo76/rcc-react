@@ -1,13 +1,37 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, .card-body>.card-title{
+  font-family: "Lobster", cursive;
+}
+
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+}  
+.navbar {
+  background-color:darkslategray;
+  margin: 0;
+  color: white;
+}
+
+.card-img-overlay .card-title {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.site-footer {
+  text-decoration: darkslategray;
 }
