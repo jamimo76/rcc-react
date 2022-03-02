@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import { BreadcrumbItem } from "reactstrap";
-import Breadcrumb from "reactstrap/lib/Breadcrumb";
-import Form from "reactstrap/lib/Form";
 import {
   Breadcrumb,
   BreadcrumbItem,
