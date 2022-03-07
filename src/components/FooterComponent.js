@@ -6,7 +6,7 @@ function Footer(props) {
     <footer className="site-footer">
       <div className="container">
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-4 col-sm-2 offset-1">
             <h5>Links</h5>
             <ul class="list-unstyled">
               <li>
@@ -15,7 +15,14 @@ function Footer(props) {
               <li>
                 <Link to="/contactus">Contact</Link>
               </li>
+              <li>
+                <Link to='/aboutus'>About</Link>
+              </li>
             </ul>
+          </div>
+          <div className="col-sm-4 text-center">
+            <a role="button" className="btn btn-link" href="tel:+16035551234"><i className="fa fa-phone" /> 1-603-555-1234</a><br />
+            <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" />rockinghamcommons@rcc.org</a>
           </div>
         </div>
       </div>
