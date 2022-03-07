@@ -81,7 +81,7 @@ class Contact extends Component {
             </address>
           </div>
           <div className="col">
-            <a role="button" className="btn btn-link" href="tel: 16035551234">
+            <a role="button" className="btn btn-link" href="tel:+16035551234">
               <i className="fa fa-phone" /> 1-603-555-1234
             </a>
             <br />

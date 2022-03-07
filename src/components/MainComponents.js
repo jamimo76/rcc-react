@@ -1,15 +1,14 @@
-import { render } from "@testing-library/react";
-import React, { Component } from "react";
-import { Navbar, NavbarBrand } from 'reactstrap'
+import React from "react";
+import Header from './HeaderComponent'
+import Footer from "./FooterComponent";
+import Home from "./HomeComponent";
 
 function Main() {
     return (
         <div>
-            <Navbar light sticky="top">
-                <div className="container">
-                    <NavbarBrand href="/">Rockingham Commons</NavbarBrand>
-                </div>
-            </Navbar>
+           <Header />
+           <Home />
+           <Footer />
         </div>
     );
 }
