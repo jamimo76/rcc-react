@@ -27,11 +27,11 @@ class Header extends Component {
     });
   }
 
-  handleLogin(e) {
+  handleLogin(event) {
     alert(
       `Username: ${this.username.value} Password: ${this.password.value} Remember: ${this.remember.checked}`);
       this.toggleModal();
-      e.preventDefault();
+      event.preventDefault();
   }
 
   render() {
@@ -71,7 +71,7 @@ class Header extends Component {
                 </NavItem>
               </Nav>
               <span className="navbar-text ml-auto">
-                <Button outline onCLick={this.toggleModal}>
+                <Button outline onClick={this.toggleModal}>
                   <i className="fa fa-sign-in fa-lg" /> Login
                 </Button>
               </span>
