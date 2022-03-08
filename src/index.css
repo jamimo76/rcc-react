@@ -2,24 +2,27 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, .card-body>.card-title{
+h1,
+h2,
+h3,
+.card-body>.card-title {
   font-family: "Lobster", cursive;
 }
 
-
 .jumbotron {
   margin: 0;
-  padding: 30px;
-}  
+  padding: 20px;
+}
+
 .navbar {
-  background-color:darkslategray;
+  background-color: darkslategray;
   margin: 0;
   color: white;
 }
 
 .card-img-overlay .card-title {
   color: white;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .row-content {
@@ -32,6 +35,7 @@ h1, h2, h3, .card-body>.card-title{
   font-weight: 500;
   font-size: 1.25rem;
 }
+
 .site-footer {
   text-decoration: darkslategray;
 }
