@@ -5,23 +5,22 @@ import Home from "./HomeComponent";
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 function Main (){
-
-    render(){
-        const HomePage = () =>{
-            return (
-                <Home />
-            );
-        };
+   
+    const HomePage = () =>{
         return (
-            <div>
-                <Header />
-                <Switch>
-                    <Route path='/' component={HomePage} />
-                </Switch>
-                <Footer />
-            </div>
+            <Home />
         );
-    }
+    };
+    return (
+        <div>
+            <Header />
+            <Switch>
+                <Route path='/' component={HomePage} />
+            </Switch>
+            <Footer />
+        </div>
+    );
 }
+
 
 export default Main;
