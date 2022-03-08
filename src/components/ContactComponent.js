@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import {
-  Breadcrumb,
+import {  Breadcrumb,
   BreadcrumbItem,
   Button,
   Label,
   Col,
-  Row
-} from "reactstrap";
-import { Control, Form, Errors, actions } from "react-redux-form";
+  Row } from 'reactstrap'
+import { Control, Form, Errors } from "react-redux-form";
 import { Link } from "react-router-dom";
 
 const required = (val) => val && val.length;
@@ -15,7 +13,8 @@ const maxLength = (len) => (val) => !val || val.length <= len;
 const minLength = (len) => (val) => val && val.length >= len;
 const isNumber = (val) => !isNaN(+val);
 const validEmail = (val) =>
-  /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+    
 
 class Contact extends Component {
   constructor(props) {
@@ -35,35 +34,14 @@ class Contact extends Component {
         email: false
       }
     };
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  handleInputChange(e) {
-    const target = e.target;
-    const name = target.name;
-    const value = target.type === "checkbox" ? target.checked : target.value;
-
-    this.setState({
-      [name]: value
-    });
-  }
-
-  handleSubmit(e) {
-    console.log("Current state is: " + JSON.stringify(this.state));
-    alert("Current state is: " + JSON.stringify(this.state));
-    e.preventDefault();
-  }
-
   render() {
     return (
       <div className="container">
         <div className="row">
           <div className="col">
             <Breadcrumb>
-              <BreadcrumbItem>
-                <Link to="/home">Home</Link>
-              </BreadcrumbItem>
+              <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
               <BreadcrumbItem active>Contact Us</BreadcrumbItem>
             </Breadcrumb>
             <h2>Contact Us</h2>
@@ -275,6 +253,6 @@ class Contact extends Component {
         </div>
       </div>
     );
-  }
+  };
 }
 export default Contact;
