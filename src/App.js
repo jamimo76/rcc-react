@@ -1,5 +1,5 @@
 import React from "react";
-import Main from './components/MainComponents'
+import Main from "./components/MainComponents";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 
