@@ -20,20 +20,6 @@ function Footer(props) {
               </li>
             </ul>
           </div>
-          <div className="col-sm-4 text-center">
-            <a role="button" className="btn btn-link" href="tel:+16035551234">
-              <i className="fa fa-phone" /> 1-603-555-1234
-            </a>
-            <br />
-            <a
-              role="button"
-              className="btn btn-link"
-              href="mailto:fakeemail@fakeemail.co"
-            >
-              <i className="fa fa-envelope-o" />
-              rockinghamcommons@rcc.org
-            </a>
-          </div>
         </div>
       </div>
     </footer>
